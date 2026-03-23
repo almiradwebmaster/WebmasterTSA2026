@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW-P Community Resource Hub</title>
+    <style>
+        :root {
+            --primary-color: #003366; /* Deep Navy */
+            --secondary-color: #FDB927; /* Gold/Yellow */
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+            --white: #ffffff;
+            --success: #2e7d32;
+            --danger: #c62828;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 1rem 5%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80') center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Main Content & Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 60px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        h4 {
+            color: var(--primary-color);
+            margin: 15px 0 10px;
+            font-size: 1.3rem;
+        }
+
+        /* Grid Layouts for Cards */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--bg-light);
+            padding: 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .status-indicator {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .status-open {
+            background-color: #e8f5e9;
+            color: var(--success);
+        }
+
+        .status-closed {
+            background-color: #ffebee;
+            color: var(--danger);
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        
+        .dot-open { background-color: var(--success); }
+        .dot-closed { background-color: var(--danger); }
+
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        a {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h1>WW-P Resource Hub</h1>
+        <ul>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#sports">Sports & Parks</a></li>
+            <li><a href="#local">Local Life</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h2>Two Townships. One Unified Community. [cite: 3]</h2>
+        <p>Welcome to West Windsor-Plainsboro Community Resource Hub — your central directory for municipal services and local engagement through sports, academic excellence, and community support. [cite: 3] We bridge the gap between residents and the resources that make our community thrive, keeping you connected from the classrooms of HSN and HSS to the views of Plainsboro Preserve. [cite: 4, 5]</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="academics">
+            <h3>Academic & Student Life [cite: 6]</h3>
+            <p>The West Windsor-Plainsboro School District is defined by two friendly rivals: High School North and High School South. [cite: 8] Both share a commitment to educating children and building successful futures. [cite: 9] Each campus features unique traditions, clubs, and student-led initiatives. [cite: 10]</p>
+            
+            <div class="grid-2" style="margin-top: 20px;">
+                <div class="card">
+                    <h4>Science Olympiad [cite: 16]</h4>
+                    <p>Both HSN and HSS compete at the Division C Level, placing high in events across STEM disciplines. [cite: 17, 18] They are top contenders in NJ, boasting 6 championship titles. [cite: 19] North placed 1st in NJ finals in 2015, 2016, 2018, 2020, and 2023. [cite: 20]</p>
+                </div>
+                <div class="card">
+                    <h4>Robotics [cite: 16, 22]</h4>
+                    <p>WWP North and South provide robust, hands-on robotics programs. [cite: 22] The MidKnight Inventors (FIRST Robotics Competition) focus on building 21st-century skills. [cite: 23] <a href="https://wwprobotics.org/" target="_blank">Learn more</a>. [cite: 24]</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources">
+            <h3>Educational Resources [cite: 25]</h3>
+            
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Local Libraries [cite: 34]</h4>
+                    <p>The West Windsor and Plainsboro libraries are the "third spaces" of our community—essential hubs with study rooms, maker spaces, and computers. [cite: 34, 35, 36]</p>
+                    
+                    <strong>Plainsboro Public Library:</strong>
+                    <ul>
+                        <li>Services: 3D printing, ESL, passports, seed library, museum passes. [cite: 39]</li>
+                        <li>Phone: (609) 275-2897 [cite: 40]</li>
+                    </ul>
+                    <div id="pb-lib-status" class="status-indicator">Loading status...</div>
+
+                    <br><br>
+                    <strong>West Windsor Public Library:</strong>
+                    <ul>
+                        <li>Services: Citizenship exam practice, resume review, tax assistance, tech instruction. [cite: 41]</li>
+                        <li>Phone: 609-799-0462 / 609-275-8901 [cite: 42]</li>
+                    </ul>
+                    <div id="ww-lib-status" class="status-indicator">Loading status...</div>
+                </div>
+
+                <div class="card">
+                    <h4>Mathnasium of Plainsboro [cite: 26]</h4>
+                    <p>A learning laboratory addressing foundational gaps and propelling advanced students. [cite: 26] Instructors help with homework, SAT/ACT prep, and developing problem-solving skills. [cite: 27, 30] </p>
+                    <ul>
+                        <li>Email: plainsboro@mathnasium.com [cite: 29]</li>
+                        <li>Phone: (609) 716-6284 [cite: 29]</li>
+                        <li><a href="https://www.mathnasium.com/summer-math-programs" target="_blank">Summer Programs available!</a> [cite: 31, 33]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="sports">
+            <h3>Athletics & Parks [cite: 43]</h3>
+            <p>Sports are divided between the highly competitive varsity programs (competing in the CVC) and community-run youth leagues. [cite: 43, 44]</p>
+            
+            <div class="grid-3">
+                <div class="card">
+                    <h4>WW Community Park [cite: 52]</h4>
+                    <ul>
+                        <li>Basketball courts [cite: 53]</li>
+                        <li>Skate park [cite: 54]</li>
+                        <li>Multi-use fields (frisbee, football) [cite: 55]</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Morris Davison Park [cite: 56]</h4>
+                    <ul>
+                        <li>Baseball & Softball [cite: 57, 58]</li>
+                        <li>Volleyball courts [cite: 59]</li>
+                        <li>Basketball courts [cite: 60]</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h4>Plainsboro Park [cite: 61]</h4>
+                    <ul>
+                        <li>Tennis courts [cite: 64]</li>
+                        <li>Volleyball & Basketball [cite: 62, 63]</li>
+                        <li>Large open field [cite: 65]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="local">
+            <h3>Food, Business & Community [cite: 66, 73]</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Local Dining [cite: 67]</h4>
+                    <ul>
+                        <li><strong>Shuu:</strong> Asian-inspired desserts (matcha, black sesame, taro). [cite: 68]</li>
+                        <li><strong>Pho Today:</strong> Vietnamese cuisine with fresh ingredients. [cite: 69]</li>
+                    </ul>
+                    <p><em>Check out Princeton Meadows Shopping Center and Plainsboro Plaza for more!</em> [cite: 71, 72]</p>
+                </div>
+                <div class="card">
+                    <h4>Community Programs [cite: 73]</h4>
+                    <ul>
+                        <li>Founders Day [cite: 74]</li>
+                        <li>Senior Center [cite: 75]</li>
+                        <li>West Windsor Bicycle and Pedestrian Alliance [cite: 77]</li>
+                        <li>NJ Transit via Princeton Junction [cite: 76]</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 WW-P Community Resource Hub | Designed for NJ TSA [cite: 3]</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Dynamic Library Open/Closed Status 
+        function updateLibraryStatus() {
+            const now = new Date();
+            const day = now.getDay(); // 0 is Sunday, 1 is Monday...
+            const hour = now.getHours();
+
+            // Simplified standard hours logic for demonstration:
+            // Assume open Mon-Sat (1-6) from 10 AM (10) to 8 PM (20)
+            // Assume open Sun (0) from 1 PM (13) to 5 PM (17)
+            let isOpen = false;
+            let nextOpen = "Opens 10 AM Tomorrow";
+
+            if (day >= 1 && day <= 6) { // Mon-Sat
+                if (hour >= 10 && hour < 20) {
+                    isOpen = true;
+                } else if (hour < 10) {
+                    nextOpen = "Opens today at 10 AM";
+                } else if (day === 6) {
+                    nextOpen = "Opens 1 PM Sunday";
+                }
+            } else if (day === 0) { // Sunday
+                if (hour >= 13 && hour < 17) {
+                    isOpen = true;
+                } else if (hour < 13) {
+                    nextOpen = "Opens today at 1 PM";
+                } else {
+                    nextOpen = "Opens 10 AM Monday";
+                }
+            }
+
+            const statusHTML = isOpen 
+                ? `<span class="dot dot-open"></span> <span class="status-open">Open Now</span>` 
+                : `<span class="dot dot-closed"></span> <span class="status-closed">Closed &middot; ${nextOpen}</span>`;
+
+            document.getElementById('pb-lib-status').innerHTML = statusHTML;
+            document.getElementById('ww-lib-status').innerHTML = statusHTML;
+        }
+
+        // Run immediately and update every minute
+        updateLibraryStatus();
+        setInterval(updateLibraryStatus, 60000);
+    </script>
+</body>
+</html>
