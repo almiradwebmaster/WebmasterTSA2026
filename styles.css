@@ -1,0 +1,98 @@
+.bodyhome{
+    background-image: url('background.PNG');
+ }
+body{
+    padding-top: 105px;
+    background-image: url('background.PNG');
+ }
+
+ .slogan{
+    background-image: url('photo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40vh;
+    color: darkred;
+ }
+
+ .slogan1 {
+    text-align: center;
+    width: auto;
+    /*background-color: rgb(236, 207, 188);*/
+    color:darkred;
+    font-size: 70px;
+    text-shadow: -1px 0, 0 1px, 1px 0, 0 -1px, -1px -1px, 1px 1px, -1px 1px, 1px -1px;
+    padding-top: 4%;
+ }
+ .slogan2 {
+    text-align: center;
+    width: auto;
+    /*background-color: rgb(236, 207, 188);*/
+    color: darkred;
+    padding-bottom: 4%;
+ }
+ .resources{
+    text-align: center;
+    font-size: 55px;
+    color: navy;
+    font-weight: 5000;
+    margin-top: 10px;
+    padding-top: 50px;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    overflow: hidden;
+ }
+.resources1 {
+    height: fit-content;
+    width: fit-content;
+    background-color: pink;
+    border: 5px solid navy;
+    border-radius: 25px;
+    padding: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+    transition:  transform 0.3s, box-shadow 0.3s;
+}
+.resourceslink{
+    text-decoration: none;
+    display: block;
+}
+.resources1:hover{
+    transform: scle (1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.image img {
+    display: block;
+    border-radius: 0 0 25px 25px;
+    border: 3.5px solid navy;
+}
+.resourcescategory {
+    text-align: center;
+    background-color: pink;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 0;
+    color: navy;
+    border: 3.5px solid pink;
+}
+.resources-container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+.navbar {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(234, 226, 220);
+    padding:15px 40px;
+    box-shadow: 0 4px 6px rgba (0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 500;
+    box-sizing: border-box;
+}
