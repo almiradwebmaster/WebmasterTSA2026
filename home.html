@@ -1,75 +1,76 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>WW-P Community Resource Hub</title>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body class = "bodyhome">
-        <div class = "slogan">
-        <div class = "slogan1"><b>West Windsor - Plainsboro Community Resource Hub</b></div>
-        <div class = "slogan2">Welcome to West Windsor-Plainsboro Community Resource Hub 
-            — your central directory for municipal services and local engagement through 
-            sports, academic excellence, and community support.</div>
-        </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WW-P Community Resource Hub</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <!--resources-->
-    <h1 class = "resources">Resources</h1>
-    <div class = "resources-container">
-    <!--about us-->
-    <a href="aboutWWP.html" class="resourceslink">
-        <div class = "resources1">
-            <div class="paddingforresources">
-            <h2 class = "resourcescategory">About WWP</h2>
-            </div>
-            <div class = "image">
-                <img src="photo.jpg" alt="My Image" height = "300px" width = "300px">
-            </div>
+    <header class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">West Windsor - Plainsboro<br>Community Resource Hub</h1>
+            <p class="hero-subtitle">Welcome to your central directory for municipal services and local engagement through sports, academic excellence, and community support.</p>
         </div>
-    </a>
-    <!--events and programs-->
-    <a href="eventsandprograms.html" class="resourceslink">
-        <div class = "resources1">
-            <div class = "paddingformenu">
-            <h2 class = "resourcescategory">Events & Programs</h2>
-            </div>
-            <div class = "image">
-                <img src="photo.jpg" alt="My Image" height = "300px" width = "300px">
-            </div>
-        </div>
-    <!--food and local businesses-->
-    <a href="foodandlocalbusinesses.html" class="resourceslink">
-        <div class = "resources1">
-            <div class = "paddingforresources">
-            <h2 class = "resourcescategory">Food & Local Businesses</h2>
-            </div>
-            <div class = "image">
-                <img src="photo.jpg" alt="My Image" height = "300px" width = "300px">
-            </div>
-        </div>
-    <!--sports-->
-    <a href="sports.html" class="resourceslink">
-        <div class = "resources1">
-            <div class="paddingforresources">
-            <h2 class = "resourcescategory">Sports</h2>
-            </div>
-            <div class = "image">
-                <img src="photo.jpg" alt="My Image" height = "300px" width = "300px">
-            </div>
-        </div>
-     <!--schools-->
-     <a href="schools.html" class="resourceslink">
-        <div class = "resources1">
-            <div class="paddingforresources">
-            <h2 class = "resourcescategory">Schools</h2>
-            </div>
-            <div class = "image">
-                <img src="photo.jpg" alt="My Image" height = "300px" width = "300px">
-            </div>
-        </div>
+    </header>
 
-    </div>
-    <!--navigation bar-->
-    <script src = "navbar.js"></script>
-    </body>
+    <main class="main-content">
+        <h2 class="section-title">Resources</h2>
+        
+        <div class="grid-container">
+            
+            <a href="aboutWWP.html" class="resource-card">
+                <div class="card-image-wrapper">
+                    <img src="photo.jpg" alt="About WWP">
+                </div>
+                <div class="card-title">
+                    <h3>About WWP</h3>
+                </div>
+            </a>
+
+            <a href="eventsandprograms.html" class="resource-card">
+                <div class="card-image-wrapper">
+                    <img src="photo.jpg" alt="Events and Programs">
+                </div>
+                <div class="card-title">
+                    <h3>Events & Programs</h3>
+                </div>
+            </a>
+
+            <a href="foodandlocalbusinesses.html" class="resource-card">
+                <div class="card-image-wrapper">
+                    <img src="photo.jpg" alt="Food and Local Businesses">
+                </div>
+                <div class="card-title">
+                    <h3>Food & Local Businesses</h3>
+                </div>
+            </a>
+
+            <a href="sports.html" class="resource-card">
+                <div class="card-image-wrapper">
+                    <img src="photo.jpg" alt="WWP Sports">
+                </div>
+                <div class="card-title">
+                    <h3>Sports</h3>
+                </div>
+            </a>
+
+            <a href="schools.html" class="resource-card">
+                <div class="card-image-wrapper">
+                    <img src="photo.jpg" alt="WWP Schools">
+                </div>
+                <div class="card-title">
+                    <h3>Schools</h3>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <script src="navbar.js"></script>
+</body>
 </html>
