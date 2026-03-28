@@ -7,6 +7,7 @@
     <link rel="icon" type="image/x-icon" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
 
@@ -14,10 +15,30 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="hero-title">About West Windsor-Plainsboro</h1>
-            <p class="hero-subtitle">Our beloved community is home to thousands originating from unique backgrounds</p>
+            <p class="hero-subtitle">What makes our community special?</p>
         </div>
     </header>
 
+    <main class="container">
+        <section class="about-section">
+            <h2>Two townships. One community.</h2>
+            <p>Within this beloved community, we aspire to create a united and harmonious family. Using this resource hub, our mission is to provide a comprehensive and user-friendly platform for residents of West Windsor-Plainsboro to access important information, resources, and services. Whether you're new to the area or have lived here for years, our goal is to help you stay informed and connected. </p>
+        </section>
+
+        <section class="about-section">
+            <h2>History</h2>
+            <p>West Windsor-Plainsboro has a rich history that spans several decades. The community was established in the early 1900s and has grown to become a thriving place for families to live and raise their children. Although West Windsor and Plainsboro are separate municipalities, we are a unified community.</p>
+        </section>
+
+        <section class="about-section">
+            <h2>Community Diversity</h2>
+            <p>West Windsor-Plainsboro is a vibrant, multicultural community that celebrates the diversity of its residents. We welcome people of all backgrounds and cultures, and encourage one another to share our unique customs.</p>
+            <div class="chart-container">
+                <canvas id="diversityChart"></canvas>
+            </div>
+        </section>
+
     <script src="navbar.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
