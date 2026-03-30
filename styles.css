@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
+    font-family: 'Times New Roman', serif;
+    background-color: #000;
+    color: #fff;
     /* padding-top: 100px; uncomment with navbar */
 }
 
@@ -131,25 +131,33 @@ body {
 }
 
 .about-section {
-    background-color: #ffffff;
+    background-color: #000;
     padding: 40px;
     margin-bottom: 40px;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .about-section h2 {
     font-size: 2rem;
     font-weight: 800;
-    color: #1a202c;
+    color: #fff;
     margin-bottom: 20px;
 }
 
 .about-section p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #555;
+    color: #fff;
     margin-bottom: 20px;
+}
+
+.hero-content {
+    padding-bottom: 20px;
+}
+
+.hero-subtitle {
+    margin-bottom: 30px;
 }
 
 .chart-container {
