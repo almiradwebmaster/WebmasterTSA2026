@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
-
+  
 
 document.addEventListener ('DOMContetnLoaded', () => {
     const buttons = document.querySelectorAll('.filter-btn');

@@ -200,7 +200,7 @@ body {
 .business-info {
     padding: 20px;
 }
-
+  
 .category-tag {
     font-size: 0.7rem;
     background: #edf2f7;
@@ -212,4 +212,4 @@ body {
 
 .hidden {
     display: none;
-}
+}  
