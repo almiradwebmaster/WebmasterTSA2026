@@ -169,3 +169,55 @@ body {
     background-color: #f8f9fa;
     border-radius: 8px;
 }
+
+.filter-controls{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn{
+    padding: 10px 20px;
+    border: 2px solid #1a202c;
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.filter-btn.active{
+    background: #1a202c;
+    color: white;
+}
+
+.business-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1 fr));
+    gap: 20px;
+}
+
+.business-card{
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.business-info {
+    padding: 20px;
+}
+  
+.category-tag {
+    font-size: 0.7rem;
+    background: #edf2f7;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}  

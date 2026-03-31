@@ -62,3 +62,28 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+  
+
+document.addEventListener ('DOMContetnLoaded', () => {
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.business-card');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            cards.forEach(card => {
+                if (filter === 'all' || card.getAttribute ('data-category') === filter){
+                    card.classList.remove('hidden');
+                }
+                else {
+                    card.classList.add('hidden');
+                }
+                }
+                )
+            });
+        });
+    });
